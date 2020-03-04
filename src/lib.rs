@@ -1,7 +1,7 @@
 #![feature(generators)]
 #![feature(generator_trait)]
 
-#![deny(missing_docs)]
+//#![deny(missing_docs)]
 //! A library for manipulating memory regions
 //!
 //! This crate provides several functions for handling memory pages and regions.
@@ -72,7 +72,7 @@ pub use protect::{protect, protect_with_handle, ProtectGuard, Protection};
 
 mod error;
 mod lock;
-mod os;
+pub mod os;
 pub mod page;
 mod protect;
 
